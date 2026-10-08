@@ -1,0 +1,9 @@
+This branch is the public SkillForge release. It contains the SkillForge core,
+CPU reference loop, optional trainer integration, benchmark adapters, and
+teacher-guided skill generators. The trainer, rollout, environment, memory,
+and GiGPO components retain their source-file license and copyright notices;
+see `THIRD_PARTY_NOTICES.md` for the directory-level summary.
+
+Private provider endpoints, company SDKs, credentials, datasets, machine paths,
+and experiment-only launchers are not included. Runtime dependencies and model
+or environment resources are supplied by the caller.
