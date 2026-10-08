@@ -17,11 +17,6 @@ episode, and evolves the skill bank during validation. The public release
 contains the core lifecycle, provider-neutral environment contracts, teacher
 guided mutation, benchmark adapters, and a cleaned VERL integration.
 
-## 📣 News
-
-- **[2026]** Public code release with VERL hooks, benchmark adapters, and
-  reproducible skill-lifecycle components.
-
 ## 📥 Model download
 
 The released task-specific RL checkpoints are available from Hugging Face:
