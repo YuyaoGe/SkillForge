@@ -146,26 +146,28 @@ validation uses the same reward and validation hooks during VERL training.
 `SkillBank` records usage, successes, parent-child relationships, and bounded
 failure context. `EvolutionConfig` controls the thresholds and budgets.
 
-## 🌍 Environments and external services
+## Citation
 
-The training extra installs the Python-side adapter dependencies. Benchmark
-assets and services remain caller-supplied:
+```perl
+@misc{ge2026skillforgecoevolvingskillsagents,
+      title={SkillForge: Co-Evolving Skills and Agents via Dynamic Skill Lifecycles},
+      author={Yuyao Ge and Yiwei Wang and Yuchen He and Baolong Bi and Lingrui Mei and Jiayu Yao and Lizhe Chen and Shenghua Liu},
+      year={2026},
+      eprint={2610.09832},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2610.09832},
+}
+```
 
-- **ALFWorld** requires its environment package and configuration.
-- **AppWorld** requires the AppWorld package and local service ports.
-- **Search** requires a configured search endpoint.
-- **WebShop** uses the bundled simulator by default and accepts
-  `WEBSHOP_BASE_URL` for another local or public simulator. Browser-based
-  `WebAgentSiteEnv` additionally requires a locally installed, matching
-  ChromeDriver; the platform-specific binary from the upstream branch is not
-  redistributed here.
-- **Gym Cards and Sokoban** use their bundled environment code, subject to the
-  optional Gym dependencies.
+## Acknowledgments
 
-No private endpoint, company SDK, machine path, credential, or experiment-only
-launcher is included in this release.
-
-## 📄 License and third-party code
+This work builds on **[SKILLRL](https://github.com/aiming-lab/SkillRL)**,
+**[VERL](https://github.com/verl-project/verl)**,
+**[ALFWorld](https://github.com/alfworld/alfworld)**, and
+**[WebShop](https://github.com/princeton-nlp/WebShop)**. We thank the authors
+and contributors of these projects for making their work available to the
+community.
 
 The SkillForge code is distributed under the repository license. Bundled VERL,
 environment, and reward components retain their upstream license headers and
